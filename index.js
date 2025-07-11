@@ -141,6 +141,20 @@ function positiveNegative(num) {
 const result = positiveNegative(-1000);
 console.log(result);
 
+function Zero(num) {
+     if (num > 0 ) {
+          console.log('it is a positive number');
+          
+     } else if(num < 0) {
+          console.log('it is a negative number ');
+          
+     } else {
+          console.log('it is a neutral number');
+          
+     }
+}
+const data = Zero(0);
+console.log(data);
 
 
 
