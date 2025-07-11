@@ -117,3 +117,31 @@ if (totalBallance >= finalHotelBill ) {
 }
 
 
+//positive negative  number find
+
+
+const pos = 300;
+if (pos > 0) {
+     console.log('it is a positive number');
+     
+} else {
+     console.log('it is a negative number');
+     
+}
+
+
+//second method
+
+function positiveNegative(num) {
+     if (
+          num >0
+     ) {
+          console.log('via it is a positive number');
+          
+     } else {
+          console.log('it is a negative number');
+          
+     }
+}
+const result = positiveNegative(-1000);
+console.log(result);
