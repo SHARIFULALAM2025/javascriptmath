@@ -57,7 +57,7 @@
 // const z1= Math.sin(y11)
 // console.log(z1);
 
-// // triangle area 
+// // triangle area
 // const base = 50;
 // const height = 100;
 // const area = 1 / 2 * base * height;
@@ -100,70 +100,143 @@
 // console.log(positiveOrNegative(0));
 
 
-const totalBallance = 100000;
-function Hotel(roomCost,foodBill,wifiBill,) {
-     const totalBill = roomCost + foodBill + wifiBill;
-     const totalBillDiscount = totalBill - (totalBill * 5) / 100;
-     return totalBillDiscount;
-}
-const finalHotelBill = Hotel(5000, 9000, 500);
-const myBallance = totalBallance - finalHotelBill;
-if (totalBallance >= finalHotelBill ) {
-     console.log(`your current ballance is:${myBallance}`);
+// const totalBallance = 100000;
+// function Hotel(roomCost,foodBill,wifiBill,) {
+//      const totalBill = roomCost + foodBill + wifiBill;
+//      const totalBillDiscount = totalBill - (totalBill * 5) / 100;
+//      return totalBillDiscount;
+// }
+// const finalHotelBill = Hotel(5000, 9000, 500);
+// const myBallance = totalBallance - finalHotelBill;
+// if (totalBallance >= finalHotelBill ) {
+//      console.log(`your current ballance is:${myBallance}`);
      
+// } else {
+//      console.log(`your total bill is :${finalHotelBill}taka .your current ballance is :${totalBallance}`);
+     
+// }
+
+// //positive negative  number find
+
+// const pos = 300;
+// if (pos > 0) {
+//      console.log('it is a positive number');
+     
+// } else {
+//      console.log('it is a negative number');
+// }
+// //second method
+
+// function positiveNegative(num) {
+//      if (
+//           num >0
+//      ) {
+//           console.log('via it is a positive number');
+          
+//      } else {
+//           console.log('it is a negative number');
+          
+//      }
+// }
+// const result = positiveNegative(-1000);
+// console.log(result);
+
+// function Zero(num) {
+//      if (num > 0 ) {
+//           console.log('it is a positive number');
+          
+//      } else if(num < 0) {
+//           console.log('it is a negative number ');
+          
+//      } else {
+//           console.log('it is a neutral number');
+          
+//      }
+// }
+// const data = Zero(0);
+// console.log(data);
+
+// for (let index = 0; index < 100; index++) {
+//      const element = index + 1;
+//      console.log(element);
+     
+     
+// }
+// let x = 2;
+// if (x % 2 === 0) {
+//      console.log('it is a even number');
+
+// } else {
+//      console.log('it is odd number');
+     
+// }
+// var PositiveNegative = 50;
+// console.log(PositiveNegative);
+// var number = 100;
+// var myFun = function(number){
+//     if (number > 0) {
+//         console.log('it is a positive number');
+
+//     } else if (number < 0) {
+//         console.log("it is a negative number");
+
+//     } else {
+//         console.log('it is a neutral number');
+
+//     }
+
+// }
+// console.log(myFun(100));
+
+
+// function Positive(x) {
+//     if (x > 0) {
+//         console.log('it is a positive number');
+
+//     } else if (x < 0) {
+//         console.log("it is a negative number");
+
+//     } else {
+//         console.log('it is a neutral number');
+
+//     }
+// }
+// var val = Positive(100);
+// console.log(val);
+
+
+
+
+
+// var x = 6;
+// var y = x % 2 == 0;
+
+
+// console.log(y);
+
+// function even(x) {
+//     if (x % 1 == 0) {
+//         console.log(`${x} is a  prime number `);
+        
+//     } else if (x % 1 !== 0) {
+//         console.log(`${x} is a  0dd number `);
+
+//     }
+// }
+// var digit = even(4);
+// console.log(digit);
+
+
+let x = 10;
+if (x > 5) {
+    if (x<15) {
+        console.log('x is between 5 and 15');
+        
+    } else {
+        console.log('x is greter than or equal to 15 ');
+        
+    }
 } else {
-     console.log(`your total bill is :${finalHotelBill}taka .your current ballance is :${totalBallance}`);
-     
+console.log('x is 5 or less');
+
 }
-
-//positive negative  number find
-
-const pos = 300;
-if (pos > 0) {
-     console.log('it is a positive number');
-     
-} else {
-     console.log('it is a negative number');
-}
-//second method
-
-function positiveNegative(num) {
-     if (
-          num >0
-     ) {
-          console.log('via it is a positive number');
-          
-     } else {
-          console.log('it is a negative number');
-          
-     }
-}
-const result = positiveNegative(-1000);
-console.log(result);
-
-function Zero(num) {
-     if (num > 0 ) {
-          console.log('it is a positive number');
-          
-     } else if(num < 0) {
-          console.log('it is a negative number ');
-          
-     } else {
-          console.log('it is a neutral number');
-          
-     }
-}
-const data = Zero(0);
-console.log(data);
-
-
-
-
-
-
-
-
-
-
-
-
