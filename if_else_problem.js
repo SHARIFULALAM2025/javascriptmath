@@ -122,25 +122,124 @@
 
 // }
 // ত্রিভুজের তিনটি বাহুর দেওয়া থাকলে ত্রিভুজ গঠন করা সম্ভব হবে কিনা তার প্রোগ্রাম
-let x = 3;
-let y = 4;
-let z = 5;
-if (x > 0 || y > 0 || z > 0) {
-   
-    if ((x + y > z) && (y + z > x) && (z + x > y)) {
-        if ((x===y)&&(y===z)) {
-            console.log('it is possible to form a equilateral ');
-            
-        } else if ((x===y)||(y===z)||(x===z)) {
-            console.log('it is possible to form a Isosceles');
-            
-        } else if ((x != y) && (y != z)&&(z != x)) {
-            console.log('it is possible to form a Scalene');
-            
+// let x = 3;
+// let y = 4;
+// let z = 5;
+// if (x > 0 || y > 0 || z > 0) {
+
+//     if ((x + y > z) && (y + z > x) && (z + x > y)) {
+//         if ((x===y)&&(y===z)) {
+//             console.log('it is possible to form a equilateral ');
+
+//         } else if ((x===y)||(y===z)||(x===z)) {
+//             console.log('it is possible to form a Isosceles');
+
+//         } else if ((x != y) && (y != z)&&(z != x)) {
+//             console.log('it is possible to form a Scalene');
+
+//         }
+
+//     } else {
+//         console.log('It is not possible to form a triangle with the sides.');
+
+//     }
+// }
+// শিক্ষার্থীর গ্রেড নির্ণয়
+
+// let gradPoint = -92;
+// if ((gradPoint > 0) && (gradPoint < 33)) {
+//     console.log('your grad point is : F');
+
+// } else if((gradPoint>=34)&&(gradPoint<=59)){
+//     console.log('your grad point is: D');
+
+// } else if ((gradPoint>=60)&&(gradPoint<=69)) {
+//     console.log('your grad point is : C');
+
+// } else if ((gradPoint>=70) && (gradPoint<=79)) {
+//     console.log('your grad point is : B');
+
+// } else if ((gradPoint>=80) && (gradPoint<=89)) {
+//     console.log('your grad point is :A');
+
+// } else if ((gradPoint>=90) && (gradPoint<=100)) {
+//     console.log("your grad point is :A+");
+
+// } else {
+//     console.log('your grad point is invalid');
+
+// }
+
+//দিনের নাম প্রিন্ট করুন (সপ্তাহান্তিক চেক):
+// let day = 1;
+// if ((day >= 1) && (day <= 7)) {
+//     if (day==1) {
+//         console.log('saturday');
+        
+//     } else if(day==2){
+//         console.log("sunday");
+        
+//     } else if (day == 3) {
+//         console.log('monday');
+        
+//     } else if (day == 4) {
+//         console.log('tuesday');
+        
+//     } else if (day == 5) {
+//         console.log('wednesday');
+        
+//     } else if (day == 6) {
+//         console.log('thursday');
+        
+//     } else if (day == 7) {
+//         console.log('friday');
+        
+//     }
+// } else {
+//     console.log("you day is invalid");
+    
+// }
+
+let char = '9'; // যেকোনো একক অক্ষর এখানে ইনপুট দিন
+
+if (char.length === 1) { // 1. ইনপুট একটি একক অক্ষর কিনা যাচাই
+    let val = char.charCodeAt(0); // অক্ষরের ASCII মান
+
+    // 2. এটি একটি বড় হাতের অক্ষর (A-Z) কিনা যাচাই
+    if (val >= 65 && val <= 90) {
+        // যদি বড় হাতের অক্ষর হয়, তাহলে দেখুন এটি স্বরবর্ণ (A, E, I, O, U) কিনা
+        if (val === 'A'.charCodeAt(0) ||
+            val === 'E'.charCodeAt(0) ||
+            val === 'I'.charCodeAt(0) ||
+            val === 'O'.charCodeAt(0) ||
+            val === 'U'.charCodeAt(0)) {
+            console.log(`It is a capital vowel character: ${char}`);
+        } else {
+            console.log(`It is a capital consonant character: ${char}`);
         }
-        
-    } else {
-        console.log('It is not possible to form a triangle with the sides.');
-        
     }
+    // 3. এটি একটি ছোট হাতের অক্ষর (a-z) কিনা যাচাই
+    else if (val >= 97 && val <= 122) {
+        // যদি ছোট হাতের অক্ষর হয়, তাহলে দেখুন এটি স্বরবর্ণ (a, e, i, o, u) কিনা
+        if (val === 'a'.charCodeAt(0) ||
+            val === 'e'.charCodeAt(0) ||
+            val === 'i'.charCodeAt(0) ||
+            val === 'o'.charCodeAt(0) ||
+            val === 'u'.charCodeAt(0)) {
+            console.log(`It is a small vowel character: ${char}`);
+        } else {
+            console.log(`It is a small consonant character: ${char}`);
+        }
+    }
+    // 4. এটি একটি সংখ্যা (0-9) কিনা যাচাই
+    else if (val >= 48 && val <= 57) {
+        console.log(`It is a number digit: ${char}`);
+    }
+    // 5. উপরের কোনোটিই না হলে, এটি একটি বিশেষ অক্ষর
+    else {
+        console.log(`It is a special character: ${char}`);
+    }
+} else { // 6. যদি ইনপুট একাধিক অক্ষর বা ফাঁকা হয়
+    console.log('Please type only one character.');
 }
+
